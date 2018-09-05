@@ -40,7 +40,7 @@ const DEFAULTS: WcWidthOptions = {
  *  This implementation assumes that characters are encoded in ISO 10646.
  */
 export default function wcswidth(str?: any, opts?: Partial<WcWidthOptions>): number {
-  let settings: WcWidthOptions = DEFAULTS;
+  let settings = DEFAULTS;
   if (opts) {
     settings = { ...DEFAULTS, ...opts };
   }
