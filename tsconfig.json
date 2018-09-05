@@ -1,15 +1,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "moduleResolution": "node",
     "lib": ["es2017"],
     "target": "es2015",
     "module": "es2015",
     "strict": true,
-    "noImplicitAny": false,
     "sourceMap": true
   },
-  "include": [
-    "./src/**/*.ts",
-    "./test/**/*.ts"
+  "files": [
+    "./src/index.ts"
   ]
 }

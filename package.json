@@ -1,37 +1,35 @@
 {
   "name": "ts-wcwidth",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.0-placeholder",
+  "description": "Port of C's wcwidth() and wcswidth()",
   "author": "Scott Cooper <scttcper@gmail.com>",
   "license": "MIT",
-  "repository": "",
+  "repository": "scttcper/ts-wcwidth",
   "keywords": [
-    "typescript"
-  ],
-  "files": [
-    "dist/*"
+    "typescript",
+    "wcwidth",
+    "columns"
   ],
   "source": "src/index.ts",
-  "main": "./dist/ts-wcwidth.js",
-  "module": "./dist/ts-wcwidth.m.js",
-  "typings": "./dist/index.d.ts",
+  "main": "./index.js",
+  "module": "./index.m.js",
+  "typings": "./index.d.ts",
   "sideEffects": false,
   "scripts": {
     "lint": "tslint -p tsconfig.json -t stylish 'src/**/*.ts' 'test/**/*.ts'",
     "lint:fix": "tslint -p tsconfig.json -t stylish --fix 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
-    "build": "microbundle build --compress false --name=trueskill --format cjs,es --target node",
+    "build": "microbundle build --compress false --format cjs,es --target node -o dist",
     "build:docs": "typedoc --out docs --target es6 --theme minimal --mode file src && touch docs/.nojekyll",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:prod": "npm run test -- --coverage --no-cache",
     "commit": "git-cz",
     "travis-deploy-once": "travis-deploy-once",
+    "presemantic-release": "cp package.json dist && cp LICENSE dist && cp README.md dist",
     "semantic-release": "cd dist && semantic-release"
   },
-  "dependencies": {
-    "tslib": "^1.9.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "23.3.1",
     "@types/node": "10.9.4",
@@ -47,7 +45,7 @@
     "ts-node": "7.0.1",
     "tslint": "5.11.0",
     "tslint-config-prettier": "1.15.0",
-    "tslint-config-standard": "8.0.1",
+    "tslint-xo": "^0.9.0",
     "typedoc": "0.12.0",
     "typescript": "3.0.3"
   },
