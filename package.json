@@ -11,8 +11,8 @@
     "columns"
   ],
   "source": "src/index.ts",
-  "main": "./index.js",
-  "module": "./index.m.js",
+  "main": "./ts-wcwidth.js",
+  "module": "./ts-wcwidth.m.js",
   "typings": "./index.d.ts",
   "sideEffects": false,
   "scripts": {
