@@ -84,5 +84,5 @@ routines has avoided to do so far.
 
 ## License
 
-**MIT**
+**MIT**  
 Previous projects were MIT licensed (included in LICENSE) and the [original c code](https://www.cl.cam.ac.uk/~mgk25/ucs/wcwidth.c) was very permissive.
