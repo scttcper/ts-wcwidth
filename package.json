@@ -1,0 +1,78 @@
+{
+  "name": "ts-wcwidth",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Scott Cooper <scttcper@gmail.com>",
+  "license": "MIT",
+  "repository": "",
+  "keywords": [
+    "typescript"
+  ],
+  "files": [
+    "dist/*"
+  ],
+  "source": "src/index.ts",
+  "main": "./dist/ts-wcwidth.js",
+  "module": "./dist/ts-wcwidth.m.js",
+  "typings": "./dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "lint": "tslint -p tsconfig.json -t stylish 'src/**/*.ts' 'test/**/*.ts'",
+    "lint:fix": "tslint -p tsconfig.json -t stylish --fix 'src/**/*.ts' 'test/**/*.ts'",
+    "prebuild": "rimraf dist",
+    "build": "microbundle build --compress false --name=trueskill --format cjs,es --target node",
+    "build:docs": "typedoc --out docs --target es6 --theme minimal --mode file src && touch docs/.nojekyll",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:prod": "npm run test -- --coverage --no-cache",
+    "commit": "git-cz",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "cd dist && semantic-release"
+  },
+  "dependencies": {
+    "tslib": "^1.9.3"
+  },
+  "devDependencies": {
+    "@types/jest": "23.3.1",
+    "@types/node": "10.9.4",
+    "commitizen": "2.10.1",
+    "cz-conventional-changelog": "2.1.0",
+    "jest": "23.5.0",
+    "microbundle": "0.6.0",
+    "prettier": "1.14.2",
+    "rimraf": "2.6.2",
+    "semantic-release": "15.9.12",
+    "travis-deploy-once": "5.0.7",
+    "ts-jest": "23.1.4",
+    "ts-node": "7.0.1",
+    "tslint": "5.11.0",
+    "tslint-config-prettier": "1.15.0",
+    "tslint-config-standard": "8.0.1",
+    "typedoc": "0.12.0",
+    "typescript": "3.0.3"
+  },
+  "release": {
+    "branch": "master"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "jest": {
+    "testURL": "http://localhost",
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "collectCoverage": true
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
