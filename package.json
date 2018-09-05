@@ -13,11 +13,11 @@
   "source": "src/index.ts",
   "main": "./ts-wcwidth.js",
   "module": "./ts-wcwidth.m.js",
-  "typings": "./index.d.ts",
+  "typings": "./src/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "lint": "tslint -p tsconfig.json -t stylish 'src/**/*.ts' 'test/**/*.ts'",
-    "lint:fix": "tslint -p tsconfig.json -t stylish --fix 'src/**/*.ts' 'test/**/*.ts'",
+    "lint": "tslint -p . -t stylish",
+    "lint:fix": "tslint -p . -t stylish --fix",
     "prebuild": "rimraf dist",
     "build": "microbundle build --compress false --format cjs,es --target node -o dist",
     "build:docs": "typedoc --out docs --target es6 --theme minimal --mode file src && touch docs/.nojekyll",
@@ -26,7 +26,7 @@
     "test:prod": "npm run test -- --coverage --no-cache",
     "commit": "git-cz",
     "travis-deploy-once": "travis-deploy-once --pro",
-    "presemantic-release": "cp package.json dist && cp LICENSE dist && cp README.md dist",
+    "presemantic-release": "cp package.json dist && cp LICENSE dist && cp README.md dist && rimraf dist/test",
     "semantic-release": "cd dist && semantic-release"
   },
   "dependencies": {},
