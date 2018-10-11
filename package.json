@@ -24,7 +24,6 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:prod": "npm run test -- --coverage --no-cache",
-    "commit": "git-cz",
     "travis-deploy-once": "travis-deploy-once --pro",
     "presemantic-release": "cp package.json dist && cp LICENSE dist && cp README.md dist && rimraf dist/test",
     "semantic-release": "cd dist && semantic-release"
