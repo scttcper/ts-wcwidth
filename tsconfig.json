@@ -2,6 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "moduleResolution": "node",
+    "esModuleInterop": true,
     "lib": ["es2017"],
     "target": "es2015",
     "module": "es2015",
