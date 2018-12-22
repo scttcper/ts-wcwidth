@@ -1,6 +1,6 @@
 import wcwidth from '../src/index';
 
-describe('Dummy test', () => {
+describe('wcwidth', () => {
   it('handles regular strings', () => {
     expect(wcwidth('abc')).toEqual(3);
   });
