@@ -4,6 +4,8 @@
 
 This project is a zero dependency typescript version of [wcwidth by timoxley](https://github.com/timoxley/wcwidth) which is a port from [wcwidth.js by Jun Woong](https://github.com/mycoboco/wcwidth.js) which was from the [original version in C](https://www.cl.cam.ac.uk/~mgk25/ucs/wcwidth.c).
 
+Demo: https://scttcper.github.io/ts-wcwidth/  
+
 ## Install
 
 ```sh
@@ -13,7 +15,7 @@ npm install ts-wcwidth
 ## Usage
 
 ```ts
-const wcwidth = require('ts-wcwidth');
+import wcwidth from 'ts-wcwidth';
 '한'.length; // 1
 wcwidth('한'); // 2
 
@@ -36,8 +38,8 @@ The following is from the original version by Markus Kuhn [wcwidth.c](https://ww
 This is an implementation of wcwidth() and wcswidth() (defined in
 IEEE Std 1002.1-2001) for Unicode.
 
-http://www.opengroup.org/onlinepubs/007904975/functions/wcwidth.html
-http://www.opengroup.org/onlinepubs/007904975/functions/wcswidth.html
+http://www.opengroup.org/onlinepubs/007904975/functions/wcwidth.html  
+http://www.opengroup.org/onlinepubs/007904975/functions/wcswidth.html  
 
 In fixed-width output devices, Latin characters all occupy a single
 "cell" position of equal width, whereas ideographic CJK characters
