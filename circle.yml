@@ -36,7 +36,7 @@ jobs:
             git config user.email "scttcper@gmail.com"
             git config user.name "ci-build"
       - run: npm run build:demo
-      - run: npx gh-pages -d demo/public
+      - run: npx gh-pages -d demo/public -m "update docs [ci skip]"
       - run: npm install
       - run: npm run build
       - run: npm run semantic-release
