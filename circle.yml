@@ -41,7 +41,7 @@ jobs:
             git config user.name "ci-build"
             ssh-add -D
       - run: npm run build:demo
-      - run: npx gh-pages -d demo/public -m "update docs [ci skip]"
+      - run: npx gh-pages -x -d demo/public -m "update docs [ci skip]" -r https://${GH_TOKEN}@github.com/TypeCtrl/ts-wcwidth.git
 
 workflows:
   version: 2
