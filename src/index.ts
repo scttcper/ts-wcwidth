@@ -55,17 +55,20 @@ export default function wcswidth(str?: any, opts?: Partial<WcWidthOptions>): num
     if (n < 0) {
       return -1;
     }
+
     s += n;
   }
 
   return s;
 }
 
+// eslint-disable-next-line complexity
 function wcwidth(ucs: number, opts: WcWidthOptions = DEFAULTS): number {
   // Test for 8-bit control characters
   if (ucs === 0) {
     return opts.nul;
   }
+
   if (ucs < 32 || (ucs >= 0x7f && ucs < 0xa0)) {
     return opts.control;
   }
@@ -77,10 +80,8 @@ function wcwidth(ucs: number, opts: WcWidthOptions = DEFAULTS): number {
 
   // If we arrive here, ucs is not a combining or C0/C1 control character
   return (
-    // tslint:disable-next-line:binary-expression-operand-order
     1 +
-    +(
-      ucs >= 0x1100 &&
+    Number(ucs >= 0x1100 &&
       (ucs <= 0x115f || // Hangul Jamo init. consonants
       ucs === 0x2329 ||
       ucs === 0x232a ||
@@ -92,8 +93,7 @@ function wcwidth(ucs: number, opts: WcWidthOptions = DEFAULTS): number {
       (ucs >= 0xff00 && ucs <= 0xff60) || // Fullwidth Forms
         (ucs >= 0xffe0 && ucs <= 0xffe6) ||
         (ucs >= 0x20000 && ucs <= 0x2fffd) ||
-        (ucs >= 0x30000 && ucs <= 0x3fffd))
-    )
+        (ucs >= 0x30000 && ucs <= 0x3fffd)))
   );
 }
 
