@@ -30,6 +30,14 @@ jobs:
       - checkout
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Install and configure dependencies
+          command: |
+            npm install -g --silent gh-pages@2.0.1
+            git config user.email "scttcper@gmail.com"
+            git config user.name "ci-build"
+      - run: npm run build:demo
+      - run: gh-pages -d demo/public
       - run: npm install --ignore-scripts
       - run: npm run build
       - run: npm run semantic-release
