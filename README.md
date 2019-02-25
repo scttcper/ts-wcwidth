@@ -1,4 +1,4 @@
-# ts-wcwidth [![npm](https://img.shields.io/npm/v/ts-wcwidth.svg)](https://www.npmjs.com/package/ts-wcwidth) [![build status](https://travis-ci.com/scttcper/ts-wcwidth.svg?branch=master)](https://travis-ci.com/scttcper/ts-wcwidth) [![coverage status](https://codecov.io/gh/scttcper/ts-wcwidth/branch/master/graph/badge.svg)](https://codecov.io/gh/scttcper/ts-wcwidth)
+# ts-wcwidth [![npm](https://img.shields.io/npm/v/ts-wcwidth.svg)](https://www.npmjs.com/package/ts-wcwidth) [![CircleCI](https://circleci.com/gh/scttcper/ts-wcwidth.svg?style=svg)](https://circleci.com/gh/scttcper/ts-wcwidth) [![coverage status](https://codecov.io/gh/scttcper/ts-wcwidth/branch/master/graph/badge.svg)](https://codecov.io/gh/scttcper/ts-wcwidth)
 
 > Determine number of columns needed for a fixed-size wide-character string
 
