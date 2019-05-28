@@ -1,5 +1,7 @@
 import { terser } from 'rollup-plugin-terser';
 import typescript from 'rollup-plugin-typescript2';
+import serve from 'rollup-plugin-serve';
+import livereload from 'rollup-plugin-livereload';
 
 // `npm run build` -> `production` is true
 // `npm run dev` -> `production` is false
@@ -17,5 +19,7 @@ export default {
       tsconfig: './demo/tsconfig.json',
     }),
     production && terser(), // minify, but only in production
+    !production && serve('demo/public'),
+    !production && livereload(),
   ],
 };
