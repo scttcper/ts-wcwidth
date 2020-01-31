@@ -7,6 +7,6 @@ const output = document.querySelector<HTMLInputElement>('#output');
 
 input.addEventListener('input', event => inputChange((event.target as HTMLInputElement).value));
 
-function inputChange(str: string) {
+function inputChange(str: string): void {
   output.value = String(wcwidth(str));
 }
