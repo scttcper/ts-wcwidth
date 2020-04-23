@@ -4,7 +4,7 @@
 
 This project is a zero dependency typescript version of [wcwidth by timoxley](https://github.com/timoxley/wcwidth) which is a port from [wcwidth.js by Jun Woong](https://github.com/mycoboco/wcwidth.js) which was from the [original version in C](https://www.cl.cam.ac.uk/~mgk25/ucs/wcwidth.c).
 
-__Demo__: https://ts-wcwidth.netlify.com/  
+__Demo__: https://ts-wcwidth.netlify.app  
 
 ## Install
 

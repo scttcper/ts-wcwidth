@@ -1,14 +1,14 @@
-import combining from './combining';
+import { combining } from './combining';
 
 export interface WcWidthOptions {
   /**
    * size of nul character
    */
-  nul: number;
+  readonly nul: number;
   /**
    * size of control character
    */
-  control: number;
+  readonly control: number;
 }
 
 const DEFAULTS: WcWidthOptions = {
