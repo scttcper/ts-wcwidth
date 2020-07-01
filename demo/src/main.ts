@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
 import wcwidth from '../../src';
 
 (window as any).wcwidth = wcwidth;

@@ -2,11 +2,11 @@ import { combining } from './combining';
 
 export interface WcWidthOptions {
   /**
-   * size of nul character
+   * Size of nul character
    */
   readonly nul: number;
   /**
-   * size of control character
+   * Size of control character
    */
   readonly control: number;
 }
