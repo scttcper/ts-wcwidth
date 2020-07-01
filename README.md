@@ -1,10 +1,10 @@
-# ts-wcwidth [![npm](https://img.shields.io/npm/v/ts-wcwidth.svg)](https://www.npmjs.com/package/ts-wcwidth) [![CircleCI](https://circleci.com/gh/scttcper/ts-wcwidth.svg?style=svg)](https://circleci.com/gh/scttcper/ts-wcwidth) [![coverage status](https://codecov.io/gh/scttcper/ts-wcwidth/branch/master/graph/badge.svg)](https://codecov.io/gh/scttcper/ts-wcwidth)
+# ts-wcwidth [![npm](https://badgen.net/npm/v/ts-wcwidth)](https://www.npmjs.com/package/ts-wcwidth) [![CircleCI](https://circleci.com/gh/scttcper/ts-wcwidth.svg?style=svg)](https://circleci.com/gh/scttcper/ts-wcwidth) [![coverage](https://badgen.net/codecov/c/github/scttcper/ts-wcwidth)](https://codecov.io/gh/scttcper/ts-wcwidth)
 
 > Determine number of columns needed for a fixed-size wide-character string
 
 This project is a zero dependency typescript version of [wcwidth by timoxley](https://github.com/timoxley/wcwidth) which is a port from [wcwidth.js by Jun Woong](https://github.com/mycoboco/wcwidth.js) which was from the [original version in C](https://www.cl.cam.ac.uk/~mgk25/ucs/wcwidth.c).
 
-__Demo__: https://ts-wcwidth.netlify.app  
+__Demo__: https://ts-wcwidth.vercel.app  
 
 ## Install
 
