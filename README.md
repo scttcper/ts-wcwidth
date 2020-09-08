@@ -1,4 +1,4 @@
-# ts-wcwidth [![npm](https://badgen.net/npm/v/ts-wcwidth)](https://www.npmjs.com/package/ts-wcwidth) [![CircleCI](https://circleci.com/gh/scttcper/ts-wcwidth.svg?style=svg)](https://circleci.com/gh/scttcper/ts-wcwidth) [![coverage](https://badgen.net/codecov/c/github/scttcper/ts-wcwidth)](https://codecov.io/gh/scttcper/ts-wcwidth) [![bundlesize](https://badgen.net/bundlephobia/min/@ctrl/ts-wcwidth)](https://bundlephobia.com/result?p=@ctrl/ts-wcwidth)
+# ts-wcwidth [![npm](https://badgen.net/npm/v/ts-wcwidth)](https://www.npmjs.com/package/ts-wcwidth) [![CircleCI](https://circleci.com/gh/scttcper/ts-wcwidth.svg?style=svg)](https://circleci.com/gh/scttcper/ts-wcwidth) [![coverage](https://badgen.net/codecov/c/github/scttcper/ts-wcwidth)](https://codecov.io/gh/scttcper/ts-wcwidth) [![bundlesize](https://badgen.net/bundlephobia/min/ts-wcwidth)](https://bundlephobia.com/result?p=ts-wcwidth)
 
 > Determine number of columns needed for a fixed-size wide-character string
 
