@@ -1,4 +1,4 @@
-/* eslint-disable array-element-newline */
+/* eslint-disable prettier/prettier */
 
 /**
  * sorted list of non-overlapping intervals of non-spacing characters
